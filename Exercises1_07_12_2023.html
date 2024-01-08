@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box_login{
+            width: 400px;
+            height: 600px;
+            background-image: linear-gradient(to right,rgb(255, 137, 233),rgb(133, 243, 255));
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .box_login h1{
+            text-align: center;
+            font-family: sans-serif;
+            margin: 25px 0px;
+            font-weight: 900;
+            color: white;
+        }
+        .box_login label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+        .box_input{
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.822);
+            color: rgba(0, 0, 0, 0.424);
+            font-size: 14px;
+            padding: 0px 10px;
+            margin-bottom: 20px;
+        }
+        .box_input input{
+            width: 90%;
+            border: none;
+            margin: 0px 10px;
+            padding: 5px 5px;
+            color: rgb(22, 0, 118);
+        }
+        .box_input input:focus{
+            outline: none;
+        }
+        .forget{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 9px;
+            text-align: end;
+            color: gray;
+        }
+        input[type="button"]{
+            width: 100%;
+            height: 40px;
+            background-color: aliceblue;
+            margin: 20px 0px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 50px;
+            background-image: linear-gradient(to right,rgb(1, 255, 255),rgb(255, 0, 200));
+            transition: 0.5s;
+        }
+        input[type="button"]:hover{
+            transform: scale(1.05);
+            transition: 0.5s;
+            box-shadow: 0px 0px 5px blue;
+        }
+        .sign{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 12px;
+        }
+        .box_sign{
+            width: 100%;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        .box_sign img{
+            width: 30px;
+            margin: 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_login">
+        <h1>Login</h1>
+        <label for="">Username</label>
+        <div class="box_input">
+            <i class="fa-regular fa-user"></i>
+            <input type="text">
+        </div>
+        <label for="">Password</label>
+        <div class="box_input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text">
+        </div>
+        <p class="forget">
+            Forget Password?
+        </p>
+        <input type="button" value="Sign up">
+        <p class="box_sign">
+            or sign up using
+        </p>
+        <div class="box_sign">
+            <img src="/image/facebook.png" alt="">
+            <img src="/image/twitter.png" alt="">
+            <img src="/image/google.png" alt="">
+        </div>
+        
+    </div>
+</body>
+</html>
